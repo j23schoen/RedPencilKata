@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="763e930f-906d-4aad-94e4-6a4dd3fb355d" name="Default" comment="increase in price ends promotion&#10;">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/RedPencilKata/RedPencil.class" afterPath="$PROJECT_DIR$/out/production/RedPencilKata/RedPencil.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/test/RedPencilKata/RedPencilTests.class" afterPath="$PROJECT_DIR$/out/test/RedPencilKata/RedPencilTests.class" />
+    <list default="true" id="763e930f-906d-4aad-94e4-6a4dd3fb355d" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/RedPencil.java" afterPath="$PROJECT_DIR$/src/RedPencil.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/RedPencilTests.java" afterPath="$PROJECT_DIR$/test/RedPencilTests.java" />
@@ -29,11 +27,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="RedPencil.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="RedPencil.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/RedPencil.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="57" column="38" selection-start-line="57" selection-start-column="38" selection-end-line="57" selection-end-column="38" />
+            <state relative-caret-position="267">
+              <caret line="105" column="24" selection-start-line="105" selection-start-column="24" selection-end-line="105" selection-end-column="24" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#614#615#0" expanded="true" />
@@ -51,11 +49,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RedPencilTests.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="RedPencilTests.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/RedPencilTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1035">
-              <caret line="69" column="45" selection-start-line="69" selection-start-column="45" selection-end-line="69" selection-end-column="45" />
+            <state relative-caret-position="645">
+              <caret line="43" column="3" selection-start-line="43" selection-start-column="3" selection-end-line="43" selection-end-column="3" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -83,8 +81,8 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/test/RedPencilTests.java" />
         <option value="$PROJECT_DIR$/src/RedPencil.java" />
+        <option value="$PROJECT_DIR$/test/RedPencilTests.java" />
       </list>
     </option>
   </component>
@@ -155,28 +153,7 @@
     <property name="FullScreen" value="true" />
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
   </component>
-  <component name="RunManager" selected="JUnit.RedPencilTests.reduce10By15AndThenBy10ShouldReturn765">
-    <configuration default="false" name="RedPencilTests.priceShouldNotBeReducedBecauseNotStable" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="RedPencilKata" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="RedPencilTests" />
-      <option name="METHOD_NAME" value="priceShouldNotBeReducedBecauseNotStable" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="JUnit.RedPencilTests.increaseAmountShouldEndPromotion">
     <configuration default="false" name="RedPencilTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="RedPencilKata" />
@@ -248,6 +225,27 @@
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="RedPencilTests" />
       <option name="METHOD_NAME" value="reduce10By15AndThenBy10ShouldReturn765" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="RedPencilTests.increaseAmountShouldEndPromotion" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="RedPencilKata" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="RedPencilTests" />
+      <option name="METHOD_NAME" value="increaseAmountShouldEndPromotion" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -679,19 +677,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.RedPencilTests.priceShouldNotBeReducedBecauseNotStable" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.RedPencilTests" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.RedPencilTests.priceShouldNotBeReducedBecauseTooBigOfPercentage" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.RedPencilTests.reduce10By7PercentShouldReturn930" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.RedPencilTests.reduce10By15AndThenBy10ShouldReturn765" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.RedPencilTests" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.RedPencilTests.priceShouldNotBeReducedBecauseTooBigOfPercentage" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.RedPencilTests.reduce10By7PercentShouldReturn930" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.RedPencilTests.reduce10By15AndThenBy10ShouldReturn765" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.RedPencilTests.increaseAmountShouldEndPromotion" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.RedPencilTests.reduce10By15AndThenBy10ShouldReturn765" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.RedPencilTests.reduce10By7PercentShouldReturn930" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.RedPencilTests" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.RedPencilTests.priceShouldNotBeReducedBecauseTooBigOfPercentage" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.RedPencilTests.priceShouldNotBeReducedBecauseNotStable" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.RedPencilTests.increaseAmountShouldEndPromotion" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.RedPencilTests.reduce10By15AndThenBy10ShouldReturn765" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.RedPencilTests.reduce10By7PercentShouldReturn930" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.RedPencilTests" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.RedPencilTests.priceShouldNotBeReducedBecauseTooBigOfPercentage" />
       </list>
     </recent_temporary>
   </component>
@@ -706,7 +704,7 @@
       <option name="presentableId" value="Default" />
       <updated>1459988046531</updated>
       <workItem from="1459988047887" duration="3131000" />
-      <workItem from="1460038450112" duration="8355000" />
+      <workItem from="1460038450112" duration="8641000" />
     </task>
     <task id="LOCAL-00001" summary="first green">
       <created>1459991483383</created>
@@ -778,12 +776,22 @@
       <option name="project" value="LOCAL" />
       <updated>1460047875674</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="reduce red pencil price works">
+      <created>1460053239011</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1460053239011</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="RedPencilTests_reduce10By15AndThenBy10ShouldReturn765 - 2016.04.07 at 13h 11m 26s.xml">
-      <configuration name="RedPencilTests.reduce10By15AndThenBy10ShouldReturn765" configurationId="JUnit" />
+    <history-entry file="RedPencilTests_increaseAmountShouldEndPromotion - 2016.04.07 at 14h 25m 48s.xml">
+      <configuration name="RedPencilTests.increaseAmountShouldEndPromotion" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RedPencilTests_increaseAmountShouldEndPromotion - 2016.04.07 at 14h 26m 10s.xml">
+      <configuration name="RedPencilTests.increaseAmountShouldEndPromotion" configurationId="JUnit" />
     </history-entry>
     <history-entry file="RedPencilTests_reduce10By15AndThenBy10ShouldReturn765 - 2016.04.07 at 13h 13m 34s.xml">
       <configuration name="RedPencilTests.reduce10By15AndThenBy10ShouldReturn765" configurationId="JUnit" />
@@ -809,12 +817,9 @@
     <history-entry file="RedPencilTests_reduce10By15AndThenBy10ShouldReturn765 - 2016.04.07 at 13h 21m 01s.xml">
       <configuration name="RedPencilTests.reduce10By15AndThenBy10ShouldReturn765" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RedPencilTests_reduce10By7PercentShouldReturn930 - 2016.04.07 at 12h 27m 45s.xml">
-      <configuration name="RedPencilTests.reduce10By7PercentShouldReturn930" configurationId="JUnit" />
-    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11486000" />
+    <option name="totallyTimeSpent" value="11772000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -861,7 +866,8 @@
     <MESSAGE value="refactored names of prices" />
     <MESSAGE value="refactored code for readability and function" />
     <MESSAGE value="increase in price ends promotion&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="increase in price ends promotion&#10;" />
+    <MESSAGE value="reduce red pencil price works" />
+    <option name="LAST_COMMIT_MESSAGE" value="reduce red pencil price works" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -904,20 +910,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/RedPencilTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1035">
-          <caret line="69" column="45" selection-start-line="69" selection-start-column="45" selection-end-line="69" selection-end-column="45" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/RedPencil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="57" column="38" selection-start-line="57" selection-start-column="38" selection-end-line="57" selection-end-column="38" />
+        <state relative-caret-position="267">
+          <caret line="105" column="24" selection-start-line="105" selection-start-column="24" selection-end-line="105" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#614#615#0" expanded="true" />
@@ -930,6 +926,16 @@
             <element signature="e#2254#2255#0" expanded="true" />
             <element signature="e#3114#3115#0" expanded="true" />
             <element signature="e#3177#3178#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/RedPencilTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="645">
+          <caret line="43" column="3" selection-start-line="43" selection-start-column="3" selection-end-line="43" selection-end-column="3" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

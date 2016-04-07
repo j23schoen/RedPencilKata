@@ -94,11 +94,16 @@ public class RedPencil {
         redPencilPrice = redPencilPrice.subtract(value);
     }
 
-    public void increasePriceByAmount(String amount){
+    public boolean increasePriceByAmount(String amount){
         if(promotionIsActive){
             BigDecimal amountToAddToRedPencil = new BigDecimal(amount);
             redPencilPrice = redPencilPrice.add(amountToAddToRedPencil);
             promotionIsActive = false;
+            return false;
+        }
+        else{
+            promotionIsActive = true;
+            return true;
         }
     }
 

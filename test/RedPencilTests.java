@@ -73,4 +73,12 @@ public class RedPencilTests {
         Assert.assertEquals(7.65, test.reduceRedPencilPrice(".10"), 0);
         Assert.assertEquals(7.65, test.reduceRedPencilPrice(".75"), 0);
     }
+
+    @Test
+    public void increaseAmountShouldEndPromotion(){
+        RedPencil test = new RedPencil("10");
+        test.addDaysOfDuration(34);
+        test.reduceOriginalPriceByPercentage(".15");
+        Assert.assertEquals(false, test.increasePriceByAmount("2"));
+    }
 }
