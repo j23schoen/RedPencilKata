@@ -5,15 +5,14 @@ public class RedPencil {
 
     private BigDecimal price;
     private int durationOfPromotion;
-    private boolean stablePrice;
 
     public RedPencil(String originalPrice) {
         this.price = new BigDecimal(originalPrice);
         this.durationOfPromotion = 0;
-        this.stablePrice = false;
     }
 
     public double getPrice(){
+        System.out.println("price");
         return price.setScale(2, RoundingMode.HALF_EVEN).doubleValue();
     }
 
@@ -23,7 +22,6 @@ public class RedPencil {
 
     public void addDaysOfDuration(int duration){
         durationOfPromotion += duration;
-
     }
 
     private void resetDuration(){
@@ -32,16 +30,32 @@ public class RedPencil {
 
     public boolean checkFor30StablePrice(){
         if(durationOfPromotion >= 30){
-            stablePrice = true;
-            return stablePrice;
+            System.out.println("price stable");
+            return true;
         }
         else{
+            System.out.println("price not stable");
             return false;
         }
     }
 
-    public void priceToReduce(String reducedPrice){
+    public double reducePrice(String reductionPercentage){
+        BigDecimal percentToReduceBy = new BigDecimal(reductionPercentage);
 
+        if(checkFor30StablePrice()){
+            if(percentToReduceBy.doubleValue() >= .05 || percentToReduceBy.doubleValue() <= .30){
+                BigDecimal percentageOfPrice = price.multiply(percentToReduceBy);
+                price = price.subtract(percentageOfPrice);
+            }
+            System.out.println("price: " + price);
+            return price.setScale(2, RoundingMode.HALF_EVEN).doubleValue();
+        }
+        else{
+            System.out.println("price cannot be reduced because the previous price hasn't been stable for 30 days");
+            return 0;
+        }
     }
+
+
 
 }

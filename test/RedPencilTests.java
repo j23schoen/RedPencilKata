@@ -23,10 +23,30 @@ public class RedPencilTests {
     }
 
     @Test
-    public void checkForStablePrice(){
+    public void priceShouldReturnTrueForBeingStable(){
         RedPencil test = new RedPencil("4");
         test.addDaysOfDuration(31);
         Assert.assertEquals(true, test.checkFor30StablePrice());
     }
 
+    @Test
+    public void priceShouldReturnFalseForNotBeingStable(){
+        RedPencil test = new RedPencil("4");
+        test.addDaysOfDuration(3);
+        Assert.assertEquals(false, test.checkFor30StablePrice());
+    }
+
+    @Test
+    public void reduce10By7PercentShouldReturn930(){
+        RedPencil test = new RedPencil("10");
+        test.addDaysOfDuration(31);
+        Assert.assertEquals(9.30, test.reducePrice("0.07"), 0);
+    }
+
+    @Test
+    public void priceShouldNotBeReducedBecauseNotStable(){
+        RedPencil test = new RedPencil("10");
+        test.addDaysOfDuration(3);
+        Assert.assertEquals(0, test.reducePrice("14"), 0);
+    }
 }
