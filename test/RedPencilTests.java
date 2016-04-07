@@ -14,4 +14,12 @@ public class RedPencilTests {
         RedPencil test = new RedPencil("3");
         Assert.assertEquals(0, test.getDuration());
     }
+
+    @Test
+    public void durationGreaterThanZeroReturn(){
+        RedPencil test = new RedPencil("3");
+        test.addDaysOfDuration(17);
+        Assert.assertEquals(17, test.getDuration());
+    }
+
 }

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="763e930f-906d-4aad-94e4-6a4dd3fb355d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/RedPencilKata/RedPencil.class" afterPath="$PROJECT_DIR$/out/production/RedPencilKata/RedPencil.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/test/RedPencilKata/RedPencilTests.class" afterPath="$PROJECT_DIR$/out/test/RedPencilKata/RedPencilTests.class" />
+    <list default="true" id="763e930f-906d-4aad-94e4-6a4dd3fb355d" name="Default" comment="can add">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/RedPencil.java" afterPath="$PROJECT_DIR$/src/RedPencil.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/RedPencilTests.java" afterPath="$PROJECT_DIR$/test/RedPencilTests.java" />
     </list>
     <ignored path="RedPencilKata.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -27,27 +27,29 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="RedPencil.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="RedPencil.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/RedPencil.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" column="34" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="34" />
+            <state relative-caret-position="330">
+              <caret line="22" column="40" selection-start-line="22" selection-start-column="40" selection-end-line="22" selection-end-column="40" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#323#324#0" expanded="true" />
                 <element signature="e#401#402#0" expanded="true" />
                 <element signature="e#432#433#0" expanded="true" />
                 <element signature="e#474#475#0" expanded="true" />
+                <element signature="e#524#525#0" expanded="true" />
+                <element signature="e#571#572#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RedPencilTests.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="RedPencilTests.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/RedPencilTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+            <state relative-caret-position="210">
+              <caret line="14" column="51" selection-start-line="14" selection-start-column="51" selection-end-line="14" selection-end-column="51" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -175,7 +177,7 @@
     <property name="FullScreen" value="true" />
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
   </component>
-  <component name="RunManager" selected="JUnit.RedPencilTests.returnDuration">
+  <component name="RunManager" selected="JUnit.RedPencilTests.durationGreaterThanZeroReturn">
     <configuration default="false" name="RedPencilTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="RedPencilKata" />
@@ -205,6 +207,27 @@
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="RedPencilTests" />
       <option name="METHOD_NAME" value="returnDuration" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="RedPencilTests.durationGreaterThanZeroReturn" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="RedPencilKata" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="RedPencilTests" />
+      <option name="METHOD_NAME" value="durationGreaterThanZeroReturn" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -628,14 +651,16 @@
     <configuration default="true" type="osgi.bnd.run" factoryName="Test Launcher (JUnit)">
       <method />
     </configuration>
-    <list size="2">
+    <list size="3">
       <item index="0" class="java.lang.String" itemvalue="JUnit.RedPencilTests" />
       <item index="1" class="java.lang.String" itemvalue="JUnit.RedPencilTests.returnDuration" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.RedPencilTests.durationGreaterThanZeroReturn" />
     </list>
     <recent_temporary>
-      <list size="2">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.RedPencilTests.returnDuration" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.RedPencilTests" />
+      <list size="3">
+        <item index="0" class="java.lang.String" itemvalue="JUnit.RedPencilTests.durationGreaterThanZeroReturn" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.RedPencilTests.returnDuration" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.RedPencilTests" />
       </list>
     </recent_temporary>
   </component>
@@ -649,7 +674,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1459988046531</updated>
-      <workItem from="1459988047887" duration="1980000" />
+      <workItem from="1459988047887" duration="2268000" />
     </task>
     <task id="LOCAL-00001" summary="first green">
       <created>1459991483383</created>
@@ -665,33 +690,31 @@
       <option name="project" value="LOCAL" />
       <updated>1459992034749</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="green light duration">
+      <created>1459992055402</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1459992055402</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="RedPencilTests - 2016.04.06 at 21h 10m 45s.xml">
-      <configuration name="RedPencilTests" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="RedPencilTests - 2016.04.06 at 21h 13m 16s.xml">
-      <configuration name="RedPencilTests" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="RedPencilTests - 2016.04.06 at 21h 13m 23s.xml">
-      <configuration name="RedPencilTests" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="RedPencilTests - 2016.04.06 at 21h 13m 36s.xml">
-      <configuration name="RedPencilTests" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="RedPencilTests - 2016.04.06 at 21h 14m 08s.xml">
-      <configuration name="RedPencilTests" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="RedPencilTests - 2016.04.06 at 21h 14m 15s.xml">
-      <configuration name="RedPencilTests" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="RedPencilTests - 2016.04.06 at 21h 15m 20s.xml">
       <configuration name="RedPencilTests" configurationId="JUnit" />
     </history-entry>
     <history-entry file="RedPencilTests - 2016.04.06 at 21h 15m 25s.xml">
       <configuration name="RedPencilTests" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RedPencilTests_durationGreaterThanZeroReturn - 2016.04.06 at 21h 24m 41s.xml">
+      <configuration name="RedPencilTests.durationGreaterThanZeroReturn" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RedPencilTests_durationGreaterThanZeroReturn - 2016.04.06 at 21h 25m 12s.xml">
+      <configuration name="RedPencilTests.durationGreaterThanZeroReturn" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RedPencilTests_durationGreaterThanZeroReturn - 2016.04.06 at 21h 25m 29s.xml">
+      <configuration name="RedPencilTests.durationGreaterThanZeroReturn" configurationId="JUnit" />
     </history-entry>
     <history-entry file="RedPencilTests_returnDuration - 2016.04.06 at 21h 20m 12s.xml">
       <configuration name="RedPencilTests.returnDuration" configurationId="JUnit" />
@@ -699,9 +722,18 @@
     <history-entry file="RedPencilTests_returnDuration - 2016.04.06 at 21h 20m 40s.xml">
       <configuration name="RedPencilTests.returnDuration" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="RedPencilTests_returnDuration - 2016.04.06 at 21h 24m 19s.xml">
+      <configuration name="RedPencilTests.returnDuration" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RedPencilTests_returnDuration - 2016.04.06 at 21h 24m 25s.xml">
+      <configuration name="RedPencilTests.returnDuration" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RedPencilTests_returnDuration - 2016.04.06 at 21h 24m 37s.xml">
+      <configuration name="RedPencilTests.returnDuration" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1980000" />
+    <option name="totallyTimeSpent" value="2268000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -740,7 +772,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first green" />
     <MESSAGE value="duration variable" />
-    <option name="LAST_COMMIT_MESSAGE" value="duration variable" />
+    <MESSAGE value="green light duration" />
+    <option name="LAST_COMMIT_MESSAGE" value="green light duration" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -751,26 +784,28 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/test/RedPencilTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="51" selection-start-line="14" selection-start-column="51" selection-end-line="14" selection-end-column="51" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/RedPencil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="34" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="34" />
+        <state relative-caret-position="330">
+          <caret line="22" column="40" selection-start-line="22" selection-start-column="40" selection-end-line="22" selection-end-column="40" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#323#324#0" expanded="true" />
             <element signature="e#401#402#0" expanded="true" />
             <element signature="e#432#433#0" expanded="true" />
             <element signature="e#474#475#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/RedPencilTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#524#525#0" expanded="true" />
+            <element signature="e#571#572#0" expanded="true" />
           </folding>
         </state>
       </provider>

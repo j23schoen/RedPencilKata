@@ -19,5 +19,9 @@ public class RedPencil {
         return durationOfPromotion;
     }
 
+    public void addDaysOfDuration(int duration){
+        durationOfPromotion += duration;
+    }
+
 
 }
