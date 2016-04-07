@@ -10,6 +10,6 @@ public class RedPencil {
     }
 
     public double getPrice(){
-        return 0;
+        return price.setScale(2, RoundingMode.HALF_EVEN).doubleValue();
     }
 }
