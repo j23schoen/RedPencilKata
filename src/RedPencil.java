@@ -8,12 +8,12 @@ public class RedPencil {
     private int durationOfPromotion;
     private int durationOfRedPencil;
 
-    public RedPencil(String originaloriginalPrice) {
-        this.originalPrice = new BigDecimal(originaloriginalPrice);
+    public RedPencil(String originalPrice) {
+        this.originalPrice = new BigDecimal(originalPrice);
         this.durationOfPromotion = 0;
     }
 
-    public double getoriginalPrice(){
+    public double getOriginalPrice(){
         System.out.println("originalPrice");
         return originalPrice.setScale(2, RoundingMode.HALF_EVEN).doubleValue();
     }
@@ -30,7 +30,7 @@ public class RedPencil {
         durationOfPromotion = 0;
     }
 
-    public boolean checkFor30StableoriginalPrice(){
+    public boolean checkFor30StableOriginalPrice(){
         if(durationOfPromotion >= 30){
             System.out.println("originalPrice stable");
             return true;
@@ -41,15 +41,13 @@ public class RedPencil {
         }
     }
 
-    public double reduceoriginalPrice(String reductionPercentage){
+    public double reduceOriginalPrice(String reductionPercentage){
         BigDecimal percentToReduceBy = new BigDecimal(reductionPercentage);
 
-        if(checkFor30StableoriginalPrice()){
-            if(percentToReduceBy.doubleValue() >= .05 && percentToReduceBy.doubleValue() <= .30){
-                BigDecimal percentageOfOriginalPrice = originalPrice.multiply(percentToReduceBy);
-                redPencilPrice = originalPrice.subtract(percentageOfOriginalPrice);
-            }
-            System.out.println("originalPrice: $" + originalPrice);
+
+        if(checkFor30StableOriginalPrice() && checkIfPercentageIsInBounds(percentToReduceBy.doubleValue())){
+            BigDecimal percentageOfOriginalPrice = originalPrice.multiply(percentToReduceBy);
+            updateRedPencilPrice(percentageOfOriginalPrice);
             return redPencilPrice.setScale(2, RoundingMode.HALF_EVEN).doubleValue();
         }
         else{
@@ -61,6 +59,19 @@ public class RedPencil {
 
     public void addDaysToRedPencilDuration(int numberOfDays){
         durationOfRedPencil += numberOfDays;
+    }
+
+    private boolean checkIfPercentageIsInBounds(double value){
+        if(value >= .05 && value <= .30){
+            return true;
+        }
+        else{
+            return false;
+        }
+    }
+
+    private void updateRedPencilPrice(BigDecimal value){
+        redPencilPrice = originalPrice.subtract(value);
     }
 
     
