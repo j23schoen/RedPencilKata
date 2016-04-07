@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="763e930f-906d-4aad-94e4-6a4dd3fb355d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/RedPencilKata/RedPencil.class" afterPath="$PROJECT_DIR$/out/production/RedPencilKata/RedPencil.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/test/RedPencilKata/RedPencilTests.class" afterPath="$PROJECT_DIR$/out/test/RedPencilKata/RedPencilTests.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/RedPencil.java" afterPath="$PROJECT_DIR$/src/RedPencil.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/RedPencilTests.java" afterPath="$PROJECT_DIR$/test/RedPencilTests.java" />
     </list>
     <ignored path="RedPencilKata.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -29,28 +26,30 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="RedPencil.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="RedPencil.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/RedPencil.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="810">
-              <caret line="54" column="51" selection-start-line="54" selection-start-column="51" selection-end-line="54" selection-end-column="51" />
+            <state relative-caret-position="582">
+              <caret line="66" column="0" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#471#472#0" expanded="true" />
-                <element signature="e#513#514#0" expanded="true" />
-                <element signature="e#563#564#0" expanded="true" />
-                <element signature="e#610#611#0" expanded="true" />
+                <element signature="e#603#604#0" expanded="true" />
                 <element signature="e#645#646#0" expanded="true" />
-                <element signature="e#684#685#0" expanded="true" />
+                <element signature="e#695#696#0" expanded="true" />
+                <element signature="e#742#743#0" expanded="true" />
+                <element signature="e#777#778#0" expanded="true" />
+                <element signature="e#816#817#0" expanded="true" />
+                <element signature="e#2140#2141#0" expanded="true" />
+                <element signature="e#2191#2192#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RedPencilTests.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="RedPencilTests.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/RedPencilTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="567">
+            <state relative-caret-position="927">
               <caret line="63" column="53" selection-start-line="63" selection-start-column="53" selection-end-line="63" selection-end-column="53" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -702,7 +701,7 @@
       <option name="presentableId" value="Default" />
       <updated>1459988046531</updated>
       <workItem from="1459988047887" duration="3131000" />
-      <workItem from="1460038450112" duration="3736000" />
+      <workItem from="1460038450112" duration="4166000" />
     </task>
     <task id="LOCAL-00001" summary="first green">
       <created>1459991483383</created>
@@ -746,7 +745,14 @@
       <option name="project" value="LOCAL" />
       <updated>1460044307487</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="rejects price reduce if percentage is out of bounds">
+      <created>1460044583872</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1460044583872</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -782,11 +788,11 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6867000" />
+    <option name="totallyTimeSpent" value="7297000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -795,7 +801,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -825,7 +831,8 @@
     <MESSAGE value="can add custom amount of days promotion has been going on&#10;" />
     <MESSAGE value="check for stable price" />
     <MESSAGE value="first price reduction works and rejects if price hasn't been stable" />
-    <option name="LAST_COMMIT_MESSAGE" value="first price reduction works and rejects if price hasn't been stable" />
+    <MESSAGE value="rejects price reduce if percentage is out of bounds" />
+    <option name="LAST_COMMIT_MESSAGE" value="rejects price reduce if percentage is out of bounds" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -844,12 +851,14 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#471#472#0" expanded="true" />
-            <element signature="e#513#514#0" expanded="true" />
-            <element signature="e#563#564#0" expanded="true" />
-            <element signature="e#610#611#0" expanded="true" />
+            <element signature="e#603#604#0" expanded="true" />
             <element signature="e#645#646#0" expanded="true" />
-            <element signature="e#684#685#0" expanded="true" />
+            <element signature="e#695#696#0" expanded="true" />
+            <element signature="e#742#743#0" expanded="true" />
+            <element signature="e#777#778#0" expanded="true" />
+            <element signature="e#816#817#0" expanded="true" />
+            <element signature="e#2140#2141#0" expanded="true" />
+            <element signature="e#2191#2192#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -864,28 +873,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/RedPencil.java">
+    <entry file="file://$PROJECT_DIR$/test/RedPencilTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="810">
-          <caret line="54" column="51" selection-start-line="54" selection-start-column="51" selection-end-line="54" selection-end-column="51" />
+        <state relative-caret-position="927">
+          <caret line="63" column="53" selection-start-line="63" selection-start-column="53" selection-end-line="63" selection-end-column="53" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#471#472#0" expanded="true" />
-            <element signature="e#513#514#0" expanded="true" />
-            <element signature="e#563#564#0" expanded="true" />
-            <element signature="e#610#611#0" expanded="true" />
-            <element signature="e#645#646#0" expanded="true" />
-            <element signature="e#684#685#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/RedPencilTests.java">
+    <entry file="file://$PROJECT_DIR$/src/RedPencil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="567">
-          <caret line="63" column="53" selection-start-line="63" selection-start-column="53" selection-end-line="63" selection-end-column="53" />
+        <state relative-caret-position="582">
+          <caret line="66" column="0" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#603#604#0" expanded="true" />
+            <element signature="e#645#646#0" expanded="true" />
+            <element signature="e#695#696#0" expanded="true" />
+            <element signature="e#742#743#0" expanded="true" />
+            <element signature="e#777#778#0" expanded="true" />
+            <element signature="e#816#817#0" expanded="true" />
+            <element signature="e#2140#2141#0" expanded="true" />
+            <element signature="e#2191#2192#0" expanded="true" />
           </folding>
         </state>
       </provider>
