@@ -43,16 +43,17 @@ public class RedPencil {
         BigDecimal percentToReduceBy = new BigDecimal(reductionPercentage);
 
         if(checkFor30StablePrice()){
-            if(percentToReduceBy.doubleValue() >= .05 || percentToReduceBy.doubleValue() <= .30){
+            if(percentToReduceBy.doubleValue() >= .05 && percentToReduceBy.doubleValue() <= .30){
                 BigDecimal percentageOfPrice = price.multiply(percentToReduceBy);
                 price = price.subtract(percentageOfPrice);
             }
-            System.out.println("price: " + price);
+            System.out.println("price: $" + price);
             return price.setScale(2, RoundingMode.HALF_EVEN).doubleValue();
         }
         else{
             System.out.println("price cannot be reduced because the previous price hasn't been stable for 30 days");
-            return 0;
+            System.out.println("price: $" + price);
+            return price.setScale(2, RoundingMode.HALF_EVEN).doubleValue();
         }
     }
 

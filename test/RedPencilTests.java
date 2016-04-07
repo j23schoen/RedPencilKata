@@ -47,6 +47,20 @@ public class RedPencilTests {
     public void priceShouldNotBeReducedBecauseNotStable(){
         RedPencil test = new RedPencil("10");
         test.addDaysOfDuration(3);
-        Assert.assertEquals(0, test.reducePrice("14"), 0);
+        Assert.assertEquals(0, test.reducePrice(".14"), 0);
+    }
+
+    @Test
+    public void priceShouldNotBeReducedBecauseTooBigOfPercentage(){
+        RedPencil test = new RedPencil("10");
+        test.addDaysOfDuration(31);
+        Assert.assertEquals(10, test.reducePrice(".37"), 0);
+    }
+
+    @Test
+    public void priceShouldNotBeReducedBecauseTooSmallOfPercentage(){
+        RedPencil test = new RedPencil("10");
+        test.addDaysOfDuration(31);
+        Assert.assertEquals(10, test.reducePrice(".03"), 0);
     }
 }
