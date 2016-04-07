@@ -64,4 +64,13 @@ public class RedPencilTests {
         test.addDaysOfDuration(31);
         Assert.assertEquals(10, test.reduceOriginalPriceByPercentage(".03"), 0);
     }
+
+    @Test
+    public void reduce10By15AndThenBy10ShouldReturn765(){
+        RedPencil test = new RedPencil("10");
+        test.addDaysOfDuration(34);
+        test.reduceOriginalPriceByPercentage(".15");
+        Assert.assertEquals(7.65, test.reduceRedPencilPrice(".10"), 0);
+        Assert.assertEquals(7.65, test.reduceRedPencilPrice(".75"), 0);
+    }
 }

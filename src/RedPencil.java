@@ -5,8 +5,8 @@ public class RedPencil {
 
     private BigDecimal originalPrice;
     private BigDecimal redPencilPrice;
-    private double totalReductionPercentage;
     private boolean promotionIsActive;
+    private double totalPercentageOffOriginal;
     private int duration;
 
     public RedPencil(String originalPrice) {
@@ -47,7 +47,6 @@ public class RedPencil {
 
         if(checkForStability() && checkIfPercentageIsInBounds(percentToReduceBy.doubleValue())){
             BigDecimal percentageOfOriginalPrice = originalPrice.multiply(percentToReduceBy);
-            totalReductionPercentage += percentToReduceBy.doubleValue();
             updateRedPencilPrice(percentageOfOriginalPrice);
             resetDuration();
             promotionIsActive = true;
@@ -56,6 +55,7 @@ public class RedPencil {
         else{
             System.out.println("originalPrice cannot be reduced");
             System.out.println("originalPrice: $" + originalPrice);
+            promotionIsActive = false;
             return originalPrice.setScale(2, RoundingMode.HALF_EVEN).doubleValue();
         }
     }
@@ -74,10 +74,24 @@ public class RedPencil {
     }
 
     public double reduceRedPencilPrice(String reductionPercentage){
-        if(promotionIsActive){
+        BigDecimal percentToReduceBy = new BigDecimal(reductionPercentage);
 
+        if(promotionIsActive && !checkIfPercentOffOriginalIsGreaterThan30()){
+            BigDecimal percentageOfRedPencilPrice = redPencilPrice.multiply(percentToReduceBy);
+            updateRedPencilWhileInPromotion(percentageOfRedPencilPrice);
+            promotionIsActive = true;
+            System.out.println(redPencilPrice);
+            return redPencilPrice.setScale(2, RoundingMode.HALF_EVEN).doubleValue();
         }
-        return 0;
+        else{
+            System.out.println("redPencil cannot be reduced");
+            promotionIsActive = false;
+            return redPencilPrice.setScale(2, RoundingMode.HALF_EVEN).doubleValue();
+        }
+    }
+
+    private void updateRedPencilWhileInPromotion(BigDecimal value){
+        redPencilPrice = redPencilPrice.subtract(value);
     }
 
     public void increasePriceByAmount(String amount){
@@ -85,6 +99,30 @@ public class RedPencil {
             BigDecimal amountToAddToRedPencil = new BigDecimal(amount);
             redPencilPrice = redPencilPrice.add(amountToAddToRedPencil);
             promotionIsActive = false;
+        }
+    }
+
+    private double findPercentOffFromOriginalPrice(){
+        double divisorOfOriginalAndRedPencil;
+        divisorOfOriginalAndRedPencil = redPencilPrice.doubleValue()/originalPrice.doubleValue();
+
+        double percentDifference;
+        percentDifference = 1 - divisorOfOriginalAndRedPencil;
+
+        totalPercentageOffOriginal += percentDifference;
+
+        System.out.println("total percentage off original: " + totalPercentageOffOriginal);
+        return totalPercentageOffOriginal;
+    }
+
+    private boolean checkIfPercentOffOriginalIsGreaterThan30(){
+        if(findPercentOffFromOriginalPrice() > .30){
+            System.out.println("reduction percentage exceeds amount from original price");
+            promotionIsActive = false;
+            return true;
+        }
+        else{
+            return false;
         }
     }
 
