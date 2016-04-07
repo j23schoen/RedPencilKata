@@ -26,41 +26,42 @@ public class RedPencilTests {
     public void priceShouldReturnTrueForBeingStable(){
         RedPencil test = new RedPencil("4");
         test.addDaysOfDuration(31);
-        Assert.assertEquals(true, test.checkFor30StableOriginalPrice());
+        Assert.assertEquals(true, test.checkForStability());
     }
 
     @Test
     public void priceShouldReturnFalseForNotBeingStable(){
         RedPencil test = new RedPencil("4");
         test.addDaysOfDuration(3);
-        Assert.assertEquals(false, test.checkFor30StableOriginalPrice());
+        Assert.assertEquals(false, test.checkForStability());
     }
 
     @Test
     public void reduce10By7PercentShouldReturn930(){
         RedPencil test = new RedPencil("10");
         test.addDaysOfDuration(31);
-        Assert.assertEquals(9.30, test.reduceOriginalPrice("0.07"), 0);
+        Assert.assertEquals(9.30, test.reduceOriginalPriceByPercentage("0.07"), 0);
+        Assert.assertEquals(0, test.getDuration());
     }
 
     @Test
     public void priceShouldNotBeReducedBecauseNotStable(){
         RedPencil test = new RedPencil("10");
         test.addDaysOfDuration(3);
-        Assert.assertEquals(10, test.reduceOriginalPrice(".14"), 0);
+        Assert.assertEquals(10, test.reduceOriginalPriceByPercentage(".14"), 0);
     }
 
     @Test
     public void priceShouldNotBeReducedBecauseTooBigOfPercentage(){
         RedPencil test = new RedPencil("10");
         test.addDaysOfDuration(31);
-        Assert.assertEquals(10, test.reduceOriginalPrice(".37"), 0);
+        Assert.assertEquals(10, test.reduceOriginalPriceByPercentage(".37"), 0);
     }
 
     @Test
     public void priceShouldNotBeReducedBecauseTooSmallOfPercentage(){
         RedPencil test = new RedPencil("10");
         test.addDaysOfDuration(31);
-        Assert.assertEquals(10, test.reduceOriginalPrice(".03"), 0);
+        Assert.assertEquals(10, test.reduceOriginalPriceByPercentage(".03"), 0);
     }
 }
