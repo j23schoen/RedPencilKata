@@ -5,10 +5,12 @@ public class RedPencil {
 
     private BigDecimal price;
     private int durationOfPromotion;
+    private boolean stablePrice;
 
-    public RedPencil(String productPrice) {
-        this.price = new BigDecimal(productPrice);
+    public RedPencil(String originalPrice) {
+        this.price = new BigDecimal(originalPrice);
         this.durationOfPromotion = 0;
+        this.stablePrice = false;
     }
 
     public double getPrice(){
@@ -21,7 +23,25 @@ public class RedPencil {
 
     public void addDaysOfDuration(int duration){
         durationOfPromotion += duration;
+
     }
 
+    private void resetDuration(){
+        durationOfPromotion = 0;
+    }
+
+    public boolean checkFor30StablePrice(){
+        if(durationOfPromotion >= 30){
+            stablePrice = true;
+            return stablePrice;
+        }
+        else{
+            return false;
+        }
+    }
+
+    public void priceToReduce(String reducedPrice){
+
+    }
 
 }

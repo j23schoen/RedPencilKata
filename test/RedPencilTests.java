@@ -22,4 +22,11 @@ public class RedPencilTests {
         Assert.assertEquals(17, test.getDuration());
     }
 
+    @Test
+    public void checkForStablePrice(){
+        RedPencil test = new RedPencil("4");
+        test.addDaysOfDuration(31);
+        Assert.assertEquals(true, test.checkFor30StablePrice());
+    }
+
 }
